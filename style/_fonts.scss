@@ -1,3 +1,26 @@
-@font-face
-    font-family: ""
-    src : url("")
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('../../fonts/Sourceserifpro.woff') format('woff'),
+         url('../../fonts/Sourceserifpro.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Source Serif Pro Bold';
+    src: url('../../fonts/Sourceserifprosemibold.woff') format('woff'),
+         url('../../fonts/Sourceserifprosemibold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@mixin bold {
+    font-family: 'Source Serif Pro Bold', sans-serif;
+    }   
+    
+    
+@mixin light {
+    font-family:'Source Serif Pro' , sans-serif;
+    }
+    

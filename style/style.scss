@@ -2,6 +2,124 @@
 @import 'fonts';
 @import 'vars';;
 
+* {
+    margin: 0;
+    padding: 0;
+    @include light;
+    @include text-style;
+}
 
+.menu {
+    display: flex;
+    align-items: center;
+    background-color: $background-color;
+
+    &-logo {
+        display: block;
+    }
+
+    &-links{
+        &_list{
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        &_link {
+            padding: 10px 20px;
+            margin: 0 50px;
+            
+            a {
+                color: $grey-color;
+                opacity: 0.6;
+            }
+
+            a:after {
+                display: block;
+                content: "";
+                height: 1px;
+                width: 0%;
+                margin-top: 4px;
+                opacity: 0.3;
+                background-color: $grey-color;
+                transition: width .5s ease-in-out;
+            }
+
+            a:hover:after {
+                width: 100%;
+            }
+        }
+
+        .phone {
+            margin-left: 85px;
+            letter-spacing: 1px;
+            opacity: 1;
+        }
+    }
+}
+
+/* main screen */
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $background-color;
+    padding-left: 165px;
+
+    .main-left-col {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            font-size: 48px;
+            @include bold;
+            margin: 30% 0 30px;
+        }
+
+        .small-text {
+            color: $grey-color;
+            opacity: .6;
+            margin-bottom: 40px;
+        }
+
+        .link {
+            color: black;
+            @include bold;
+            line-height: 1.5;
+            text-transform: uppercase;
+            text-decoration: underline;
+            transition: all .3s ease;
+        }
+
+        .link:hover {
+            color:$grey-color;
+            opacity: .5;
+        }
+
+        .social {
+            margin-top: 20%;
+            color: $grey-color;
+            opacity: .2;
+            transition: all .3s ease;
+        }
+
+        .social:hover {
+            opacity: .5;
+        }
+    }
+
+    .main-right-col {
+        flex-basis: 50%;
+
+        img {
+            margin: -80px 0 0;
+            width: 100%;
+        }
+    }
+
+    
+}
 
 @import 'media';
