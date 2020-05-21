@@ -74,6 +74,22 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   line-height: 1.2; }
 
+.section {
+  margin: 100px 165px; }
+
+.section-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  font-family: 'Source Serif Pro Bold', sans-serif;
+  font-size: 36px;
+  letter-spacing: 0.1em;
+  color: #212021; }
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,7 +141,8 @@ h1, h2, h3, h4, h5, h6 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   background-color: #f8f8f8;
-  padding-left: 165px; }
+  padding-left: 165px;
+  margin: 0; }
   .main .main-left-col {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -171,3 +188,60 @@ h1, h2, h3, h4, h5, h6 {
     .main .main-right-col img {
       margin: -80px 0 0;
       width: 100%; }
+
+.portfolio h2 {
+  margin-bottom: 23%; }
+
+.portfolio__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative; }
+
+.portfolio__works-tag {
+  font-size: 14px;
+  font-weight: 300;
+  color: #212021;
+  margin-bottom: 8px; }
+
+.portfolio__works-text {
+  font-family: 'Source Serif Pro Bold', sans-serif; }
+
+.portfolio .work1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  width: 100%; }
+
+.portfolio .work2 {
+  position: absolute;
+  left: 41%;
+  top: -25%; }
+
+.portfolio .work3 {
+  position: absolute;
+  left: 41%;
+  top: 45%; }
+
+.portfolio .work4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  width: 100%; }
