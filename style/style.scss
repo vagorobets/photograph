@@ -23,6 +23,25 @@
     color: $grey-color;
 }
 
+.link {
+    color: black;
+    @include bold;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-decoration: underline;
+    transition: all .3s ease;
+
+    &:hover{
+        color:$grey-color;
+        opacity: .8;
+    }
+
+    &-img{
+        margin-left: 10px;
+        width: 20px;
+    }
+}
+
 .menu {
     display: flex;
     align-items: center;
@@ -97,20 +116,6 @@
             color: $grey-color;
             opacity: .6;
             margin-bottom: 40px;
-        }
-
-        .link {
-            color: black;
-            @include bold;
-            line-height: 1.5;
-            text-transform: uppercase;
-            text-decoration: underline;
-            transition: all .3s ease;
-        }
-
-        .link:hover {
-            color:$grey-color;
-            opacity: .5;
         }
 
         .social {
@@ -189,6 +194,58 @@
         flex-direction: column;
         flex-basis: 25%;
         width: 100%;
+    }
+}
+
+.portfolio-link {
+    display: flex;
+    margin-top: 200px;
+
+    .portfolio-link-left-col {
+        flex-basis: 50%;
+        position: relative;
+
+        &__back {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &__img {
+            position: absolute;
+            left: 0;
+            top: 50px;
+            z-index: 2;
+        }
+    }
+
+    .portfolio-link-right-col {
+        flex-basis: 50%;
+        position: relative;
+
+        &-border {
+            position: absolute;
+            left: -20%;
+            top: 15%;
+        }
+
+        &__description{
+            position: absolute;
+            left: 10%;
+            top: 150px;
+            width: 300px;
+
+            &-title {
+                @include bold;
+                font-size: 22px;
+                margin-bottom: 15px;
+            }
+
+            &-text {
+                color: $grey-color;
+                margin-bottom: 15px;
+            }
+        }
     }
 }
 
