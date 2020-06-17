@@ -204,15 +204,85 @@ h1, h2, h3, h4, h5, h6 {
   .portfolio .leave_1 {
     position: absolute;
     top: -3%;
-    left: 3%; }
+    left: 3%;
+    -webkit-animation: move_leave_1 7s infinite linear;
+    animation: move_leave_1 7s infinite linear; }
+
+@-webkit-keyframes move_leave_1 {
+  50% {
+    top: -2%;
+    left: 4%;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  100% {
+    top: -3%;
+    left: 3%; } }
+
+@keyframes move_leave_1 {
+  50% {
+    top: -2%;
+    left: 4%;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  100% {
+    top: -3%;
+    left: 3%; } }
   .portfolio .leave_2 {
     position: absolute;
     top: -7%;
-    right: 15%; }
+    right: 15%;
+    -webkit-animation: move_leave_2 5s infinite linear;
+    animation: move_leave_2 5s infinite linear; }
+
+@-webkit-keyframes move_leave_2 {
+  50% {
+    top: -9%;
+    right: 14%;
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  100% {
+    top: -7%;
+    right: 15%; } }
+
+@keyframes move_leave_2 {
+  50% {
+    top: -9%;
+    right: 14%;
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  100% {
+    top: -7%;
+    right: 15%; } }
   .portfolio .leave_3 {
     position: absolute;
     top: 10%;
-    right: -8%; }
+    right: -8%;
+    -webkit-animation: move_leave_3 4s infinite linear;
+    animation: move_leave_3 4s infinite linear; }
+
+@-webkit-keyframes move_leave_3 {
+  50% {
+    top: 9%;
+    right: -7%;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  100% {
+    top: 10%;
+    right: -8%; } }
+
+@keyframes move_leave_3 {
+  50% {
+    top: 9%;
+    right: -7%;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  100% {
+    top: 10%;
+    right: -8%; } }
   .portfolio h2 {
     margin-bottom: 23%; }
   .portfolio__block {
@@ -284,7 +354,53 @@ h1, h2, h3, h4, h5, h6 {
   .portfolio-link .leave_4 {
     position: absolute;
     top: 20%;
-    right: 8%; }
+    right: 8%;
+    -webkit-animation: move_leave_4 20s infinite linear;
+    animation: move_leave_4 20s infinite linear; }
+
+@-webkit-keyframes move_leave_4 {
+  20% {
+    top: 30%;
+    right: 1%;
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04); }
+  40% {
+    top: 35%;
+    right: 4%;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  80% {
+    top: 37%;
+    right: 3%;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    top: 20%;
+    right: 8%; } }
+
+@keyframes move_leave_4 {
+  20% {
+    top: 30%;
+    right: 1%;
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04); }
+  40% {
+    top: 35%;
+    right: 4%;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  80% {
+    top: 37%;
+    right: 3%;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    top: 20%;
+    right: 8%; } }
   .portfolio-link-left-col {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -364,11 +480,55 @@ h1, h2, h3, h4, h5, h6 {
   .cost .leave_5 {
     position: absolute;
     top: -2%;
-    left: 0%; }
+    left: 0%;
+    -webkit-animation: move_leave_5 8s infinite linear;
+    animation: move_leave_5 8s infinite linear; }
+
+@-webkit-keyframes move_leave_5 {
+  50% {
+    top: -3%;
+    left: 1%;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  100% {
+    top: -2%;
+    left: 0%; } }
+
+@keyframes move_leave_5 {
+  50% {
+    top: -3%;
+    left: 1%;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  100% {
+    top: -2%;
+    left: 0%; } }
   .cost .leave_6 {
     position: absolute;
     top: -6%;
-    right: 17%; }
+    right: 17%;
+    -webkit-animation: move_leave_6 8s infinite linear;
+    animation: move_leave_6 8s infinite linear; }
+
+@-webkit-keyframes move_leave_6 {
+  50% {
+    top: -7%;
+    right: 16%;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  100% {
+    top: -6%;
+    right: 17%; } }
+
+@keyframes move_leave_6 {
+  50% {
+    top: -7%;
+    right: 16%;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  100% {
+    top: -6%;
+    right: 17%; } }
   .cost__back {
     z-index: -1;
     position: absolute;
@@ -409,11 +569,55 @@ h1, h2, h3, h4, h5, h6 {
   .footer .leave_7 {
     position: absolute;
     top: -6%;
-    left: 0%; }
+    left: 0%;
+    -webkit-animation: move_leave_7 8s infinite linear;
+    animation: move_leave_7 8s infinite linear; }
+
+@-webkit-keyframes move_leave_7 {
+  50% {
+    top: -5%;
+    left: 1%;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  100% {
+    top: -6%;
+    left: 0%; } }
+
+@keyframes move_leave_7 {
+  50% {
+    top: -5%;
+    left: 1%;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  100% {
+    top: -6%;
+    left: 0%; } }
   .footer .leave_8 {
     position: absolute;
     top: -80%;
-    right: 4%; }
+    right: 4%;
+    -webkit-animation: move_leave_8 15s infinite linear;
+    animation: move_leave_8 15s infinite linear; }
+
+@-webkit-keyframes move_leave_8 {
+  50% {
+    top: -81%;
+    right: 6%;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  100% {
+    top: -80%;
+    right: 4%; } }
+
+@keyframes move_leave_8 {
+  50% {
+    top: -81%;
+    right: 6%;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  100% {
+    top: -80%;
+    right: 4%; } }
   .footer__links {
     display: -webkit-box;
     display: -ms-flexbox;

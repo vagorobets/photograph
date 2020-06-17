@@ -155,18 +155,61 @@
         position: absolute;
         top: -3%;
         left: 3%;
+        animation: move_leave_1 7s infinite linear;
+    }
+
+    @keyframes move_leave_1 {
+        50%{
+            top: -2%;
+            left: 4%;
+            transform: rotate(15deg);
+        }
+
+        100%{
+            top: -3%;
+            left: 3%;
+        }
     }
 
     .leave_2{
         position: absolute;
         top: -7%;
         right: 15%;
+        animation: move_leave_2 5s infinite linear;
+    }
+
+    @keyframes move_leave_2 {
+        50%{
+            top: -9%;
+            right: 14%;
+            transform: scale(1.04);
+            transform: rotate(15deg);
+        }
+
+        100%{
+            top: -7%;
+            right: 15%;
+        }
     }
 
     .leave_3{
         position: absolute;
         top: 10%;
         right: -8%;
+        animation: move_leave_3 4s infinite linear;
+    }
+
+    @keyframes move_leave_3 {
+        50%{
+            top: 9%;
+            right: -7%;
+            transform: rotate(15deg);
+        }
+
+        100%{
+            top: 10%;
+            right: -8%;
+        }
     }
 
     h2{
@@ -244,6 +287,33 @@
         position: absolute;
         top: 20%;
         right: 8%;
+        animation: move_leave_4 20s infinite linear;
+    }
+
+    @keyframes move_leave_4 {
+        20%{
+            top: 30%;
+            right: 1%;
+            transform: scale(1.04);
+        }
+
+        40%{
+            top: 35%;
+            right: 4%;
+            transform: scale(1.1);
+            transform: rotate(15deg);
+        }
+
+        80%{
+            top: 37%;
+            right: 3%;
+            transform: scale(1);
+        }
+
+        100%{
+            top: 20%;
+            right: 8%;
+        }
     }
     
 
@@ -351,12 +421,40 @@
         position: absolute;
         top: -2%;
         left: 0%;
+        animation: move_leave_5 8s infinite linear;
+    }
+
+    @keyframes move_leave_5 {
+        50%{
+            top: -3%;
+            left: 1%;
+            transform: rotate(15deg);
+        }
+
+        100%{
+            top: -2%;
+            left: 0%;
+        }
     }
 
     .leave_6{
         position: absolute;
         top: -6%;
         right: 17%;
+        animation: move_leave_6 8s infinite linear;
+    }
+
+    @keyframes move_leave_6 {
+        50%{
+            top: -7%;
+            right: 16%;
+            transform: rotate(15deg);
+        }
+
+        100%{
+            top: -6%;
+            right: 17%;
+        }
     }
 
     &__back {
@@ -412,12 +510,40 @@
         position: absolute;
         top: -6%;
         left: 0%;
+        animation: move_leave_7 8s infinite linear;
+    }
+
+    @keyframes move_leave_7 {
+        50%{
+            top: -5%;
+            left: 1%;
+            transform: rotate(15deg);
+        }
+
+        100%{
+            top: -6%;
+            left: 0%;
+        }
     }
 
     .leave_8{
         position: absolute;
         top: -80%;
         right: 4%;
+        animation: move_leave_8 15s infinite linear;
+    }
+
+    @keyframes move_leave_8 {
+        50%{
+            top: -81%;
+            right: 6%;
+            transform: rotate(15deg);
+        }
+
+        100%{
+            top: -80%;
+            right: 4%;
+        }
     }
 
     &__links{
