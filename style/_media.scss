@@ -1,0 +1,16 @@
+@media screen and (min-width: 1550px){
+    .portfolio-link {
+        justify-content: center;
+        margin-left: 15%;
+        &-left-col {
+            &__back {
+               display: none;
+            }
+        }
+        &-right-col {
+            &-border {
+                display: none;
+            }
+       }
+    }
+}
