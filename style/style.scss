@@ -179,6 +179,16 @@
         &-text {
             @include bold;
         }
+
+        &-img {
+            transition: all .7s ease;
+            margin-bottom: 10px;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.02);
+            }
+        }
     }
 
     .work1 {
@@ -300,6 +310,47 @@
             &-link {
                 color: $grey-color;
             }
+        }
+    }
+}
+
+.cost {
+    display: flex;
+    flex-direction: column;
+    
+    &-columns{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+
+        &__left-column{
+            margin-top: 200px;
+        }
+
+        &__center-column{
+            margin: 0 5%;
+        }
+
+        &__right-column{
+            margin-top: 250px;
+        }
+
+        &-info{
+            font-size: 25px;
+            @include bold;
+            color: #8eb574;
+            margin: 10px 0;
+
+            &__small-text {
+                margin-left: 40%;
+                color: #8eb574;
+            }
+        }
+
+        &-text{
+            line-height: 1.5;
+            margin-top: 20px;
+            font-size: 17px;
         }
     }
 }

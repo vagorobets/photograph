@@ -72,7 +72,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   font-family: 'Source Serif Pro' , sans-serif;
   font-size: 18px;
-  line-height: 1.2; }
+  line-height: 1.2;
+  color: #212021; }
 
 .section {
   margin: 100px 165px; }
@@ -223,6 +224,17 @@ h1, h2, h3, h4, h5, h6 {
 .portfolio__works-text {
   font-family: 'Source Serif Pro Bold', sans-serif; }
 
+.portfolio__works-img {
+  -webkit-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+  margin-bottom: 10px;
+  cursor: pointer; }
+  .portfolio__works-img:hover {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02); }
+
 .portfolio .work1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,3 +337,37 @@ h1, h2, h3, h4, h5, h6 {
         font-family: 'Source Serif Pro Bold', sans-serif; }
       .about__main__description-link {
         color: #212021; }
+
+.cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .cost-columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center; }
+    .cost-columns__left-column {
+      margin-top: 200px; }
+    .cost-columns__center-column {
+      margin: 0 5%; }
+    .cost-columns__right-column {
+      margin-top: 250px; }
+    .cost-columns-info {
+      font-size: 25px;
+      font-family: 'Source Serif Pro Bold', sans-serif;
+      color: #8eb574;
+      margin: 10px 0; }
+      .cost-columns-info__small-text {
+        margin-left: 40%;
+        color: #8eb574; }
+    .cost-columns-text {
+      line-height: 1.5;
+      margin-top: 20px;
+      font-size: 17px; }
