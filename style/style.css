@@ -88,7 +88,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Source Serif Pro Bold', sans-serif;
   font-size: 36px;
   letter-spacing: 0.1em;
-  color: #212021; }
+  color: #212021;
+  text-transform: uppercase; }
 
 .link {
   color: black;
@@ -141,6 +142,9 @@ h1, h2, h3, h4, h5, h6 {
       transition: width .5s ease-in-out; }
     .menu-links_link a:hover:after {
       width: 100%; }
+    .menu-links_link .tel {
+      color: black;
+      font-family: 'Source Serif Pro Bold', sans-serif; }
   .menu-links .phone {
     margin-left: 85px;
     letter-spacing: 1px;
@@ -210,8 +214,11 @@ h1, h2, h3, h4, h5, h6 {
 .portfolio__works-tag {
   font-size: 14px;
   font-weight: 300;
-  color: #212021;
-  margin-bottom: 8px; }
+  color: #636363;
+  margin-bottom: 8px;
+  cursor: pointer; }
+  .portfolio__works-tag:hover {
+    opacity: .7; }
 
 .portfolio__works-text {
   font-family: 'Source Serif Pro Bold', sans-serif; }
@@ -254,7 +261,8 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 200px; }
+  margin-top: 200px;
+  height: 500px; }
   .portfolio-link .portfolio-link-left-col {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
@@ -266,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
     .portfolio-link .portfolio-link-left-col__img {
       position: absolute;
       left: 0;
-      top: 50px;
+      top: 90px;
       z-index: 2; }
   .portfolio-link .portfolio-link-right-col {
     -ms-flex-preferred-size: 50%;
@@ -274,12 +282,12 @@ h1, h2, h3, h4, h5, h6 {
     position: relative; }
     .portfolio-link .portfolio-link-right-col-border {
       position: absolute;
-      left: -20%;
-      top: 15%; }
+      left: -40%;
+      top: 40px; }
     .portfolio-link .portfolio-link-right-col__description {
       position: absolute;
-      left: 10%;
-      top: 150px;
+      left: -10%;
+      top: 190px;
       width: 300px; }
       .portfolio-link .portfolio-link-right-col__description-title {
         font-family: 'Source Serif Pro Bold', sans-serif;
@@ -288,3 +296,32 @@ h1, h2, h3, h4, h5, h6 {
       .portfolio-link .portfolio-link-right-col__description-text {
         color: #212021;
         margin-bottom: 15px; }
+
+.about {
+  margin-top: 150px;
+  position: relative; }
+  .about__back-img {
+    position: absolute;
+    z-index: -1;
+    top: 31%;
+    left: 40%; }
+  .about__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .about__main__first-img {
+      height: 100%;
+      margin-right: 55px; }
+    .about__main__second-img {
+      height: 100%;
+      margin-right: 55px;
+      margin-top: 55px; }
+    .about__main__description {
+      width: 330px;
+      margin-top: 170px; }
+      .about__main__description p {
+        margin-bottom: 18px; }
+      .about__main__description-bold {
+        font-family: 'Source Serif Pro Bold', sans-serif; }
+      .about__main__description-link {
+        color: #212021; }

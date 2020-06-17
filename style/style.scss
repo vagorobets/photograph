@@ -21,6 +21,7 @@
     font-size: 36px;
     letter-spacing: 0.1em;
     color: $grey-color;
+    text-transform: uppercase;
 }
 
 .link {
@@ -80,6 +81,11 @@
 
             a:hover:after {
                 width: 100%;
+            }
+
+            .tel{
+                color: black;
+                @include bold;
             }
         }
 
@@ -161,8 +167,13 @@
         &-tag {
             font-size: 14px;
             font-weight: 300;
-            color: $grey-color;
+            color: #636363;
             margin-bottom: 8px;
+            cursor: pointer;
+
+            &:hover{
+                opacity: .7;
+            }
         }
 
         &-text {
@@ -200,6 +211,7 @@
 .portfolio-link {
     display: flex;
     margin-top: 200px;
+    height: 500px;
 
     .portfolio-link-left-col {
         flex-basis: 50%;
@@ -214,7 +226,7 @@
         &__img {
             position: absolute;
             left: 0;
-            top: 50px;
+            top: 90px;
             z-index: 2;
         }
     }
@@ -225,14 +237,14 @@
 
         &-border {
             position: absolute;
-            left: -20%;
-            top: 15%;
+            left: -40%;
+            top: 40px;
         }
 
         &__description{
             position: absolute;
-            left: 10%;
-            top: 150px;
+            left: -10%;
+            top: 190px;
             width: 300px;
 
             &-title {
@@ -244,6 +256,49 @@
             &-text {
                 color: $grey-color;
                 margin-bottom: 15px;
+            }
+        }
+    }
+}
+.about{
+    margin-top: 150px;
+    position: relative;
+
+    &__back-img{
+        position: absolute;
+        z-index: -1;
+        top: 31%;
+        left: 40%;
+    }
+    
+    &__main {
+        display: flex;
+
+        &__first-img {
+            height: 100%;
+            margin-right: 55px;
+        }
+        
+        &__second-img {
+            height: 100%;
+            margin-right: 55px;
+            margin-top: 55px;
+        }
+
+        &__description{
+            width: 330px;
+            margin-top: 170px;
+
+            p {
+                margin-bottom: 18px;
+            }
+
+            &-bold{
+                @include bold;
+            }
+
+            &-link {
+                color: $grey-color;
             }
         }
     }
