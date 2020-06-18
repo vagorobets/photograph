@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <title>Document</title>
+    <title>Photograph Darya</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <nav class = 'menu'>
@@ -12,15 +14,15 @@
             <img src="img/logo.png" alt="logo">
         </div>
         <div class="menu-links">
-            <ul class="menu-links_list">
-                <li class="menu-links_link"><a href="#">Обо мне</a></li>
-                <li class="menu-links_link"><a href="#">Стоимость</a></li>
-                <li class="menu-links_link"><a href="#">Контакты</a></li>
+            <ul id="generall_menu">
+                <li class="menu-links_link"><a href="#about">Обо мне</a></li>
+                <li class="menu-links_link"><a href="#cost">Стоимость</a></li>
+                <li class="menu-links_link"><a href="#footer">Контакты</a></li>
                 <li class="menu-links_link phone"><a class="tel" href="tel:+79166677112">+7 (916) 66-77-112</a></li>
             </ul>
         </div>
     </nav>
-
+    
     <section class="main section">
         <div class="main-left-col">
             <h1>Дарья Воронина</h1>
@@ -32,6 +34,7 @@
             <img class = "img" src="img/first-screen.png" alt="photo">
         </div>
     </section>
+    <div id="scrollToTop" onclick="goUp();">↑</div>
 
     <section class="portfolio section">
         <h2 class = "section-title">ПОРТФОЛИО</h2>
@@ -80,12 +83,12 @@
         </div>
     </section>
 
-    <section class="about section">
+    <section class="about section" id="about">
         <h2 class = "section-title">Обо мне</h2>
         <img class= "about__back-img" src="img/about/back.png">
         <div class="about__main">
-            <img class="about__main__first-img" src="img/about/1.png">
-            <img class="about__main__second-img" src="img/about/2.png">
+            <img class="about__main__first-img about__main__img" src="img/about/1.png">
+            <img class="about__main__second-img about__main__img" src="img/about/2.png">
             <div class="about__main__description">
                 <p>Во всех фотосъемках еды, я работаю как фуд-фотограф и фуд-стилист. 
                     Создаю креативные концепции, реализую ваши идеи. Разрабатываю рецепты, вкусно снимаю. <br> Провожу обучение</p>
@@ -98,7 +101,7 @@
     </div>
     </section>
 
-    <section class="cost section">
+    <section class="cost section"  id="cost">
         <h2 class = "section-title">Стоимость</h2>
         <img class="cost__back" src="img/cost/back.png">
         <img src="img/leaves/5.png" class="leave_5 leaves">
@@ -149,7 +152,7 @@
     </div>
     </section>
 
-    <footer class="footer section">
+    <footer class="footer section"  id="footer">
         <h2 class = "section-title">Свяжитесь со мной</h2>
         <img src="img/leaves/7.png" class="leave_7 leaves">
         <img src="img/leaves/8.png" class="leave_8 leaves">
@@ -164,6 +167,6 @@
             <img class="footer__icons-icon" src="img/social/vk.png" alt="social">
             <img class="footer__icons-icon" src="img/social/pi.png" alt="social">
         </div>
-    </footer>
+    </footer> 
 </body>
 </html>
